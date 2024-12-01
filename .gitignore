@@ -20,3 +20,10 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+insert_at.cmi
+insert_at.cmo
+insert_none_at.cmi
+insert_none_at.cmo
+program
+test_program
