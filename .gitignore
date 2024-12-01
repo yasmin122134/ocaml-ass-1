@@ -27,3 +27,6 @@ insert_none_at.cmi
 insert_none_at.cmo
 program
 test_program
+t
+table_two.cmi
+table_two.cmo
