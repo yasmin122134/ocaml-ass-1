@@ -12,9 +12,3 @@ let rec comparator_tree tree elem comparator =
         Node (value, comparator_tree left elem comparator, right)
       else
         Node (value, left, comparator_tree right elem comparator);;
-
-(* Define an integer comparator function *)
-let int_comparator x y = 
-  if x < y then -1 
-  else if x > y then 1 
-  else 0;;
