@@ -24,13 +24,3 @@ let rec var_val_comb vars = match vars with
 let table vars expr =
     let find var_val = (var_val, evaluate expr var_val) in
     List.map find (var_val_comb vars);;
-
-
-let expr = And (Var "a", Or (Var "b", Not (Var "c")));;
-let vars = ["a"; "b"; "c"];;
-let truth_table = table vars expr;;
-List.iter (fun (assignments, result) ->
-    Printf.printf "%s -> %b\n"
-        (String.concat ", " (List.map (fun (v, b) -> Printf.sprintf "%s=%b" v b) assignments))
-        result
-) truth_table;;
